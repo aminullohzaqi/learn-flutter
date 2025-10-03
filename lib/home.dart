@@ -18,22 +18,31 @@ class WeatherHome extends StatelessWidget {
           ),
           Center(
             child: Container(
-              color: Colors.white60,
               width: 400,
               height: 400,
-            )
-          ),
-          Positioned.fill(
-            child: Column(
-              children: [
-                SizedBox(height: AppBar().preferredSize.height),
-                Text("30°", style: TextStyle(fontSize: 80)),
-                Text("Cerah Berawan", style: TextStyle(fontSize: 25)),
-                Text("data"),
-                Text("data"),
-              ],
+              decoration: BoxDecoration(
+                color: Colors.white60,
+                borderRadius: BorderRadius.circular(20),
+              ),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text(
+                    "30°",
+                    style: TextStyle(fontSize: 80, fontWeight: FontWeight.bold),
+                  ),
+                  SizedBox(height: 8),
+                  Text(
+                    "Cerah Berawan",
+                    style: TextStyle(fontSize: 25),
+                  ),
+                  SizedBox(height: 20),
+                  Text("data"),
+                  Text("data"),
+                ],
+              ),
             ),
-          ),
+          )
         ],
       ),
     );
